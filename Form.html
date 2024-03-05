@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            margin: 50px auto;
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="radio"] {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 50px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2d8bf7;
+        }
+
+        img {
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form Pembuatan Akun MCA</h2>
+    <a href="https://www.gamelab.id/">
+        <img src="https://www.gamelab.id/img/logo-gamelab/display/Logo_GameLab_Portrait1.png" height="auto"
+            width="150px" alt="">
+    </a>
+    <form action="/aksi.php" method="get">
+        <label for="name">Nama :</label>
+        <input type="text" name="name" id="name">
+        <label for="username">Username :</label>
+        <input type="text" name="username" id="username">
+        <label for="pass">Password :</label>
+        <input type="password" name="pass" id="pass">
+        <label for="jeniskel">Jenis Kelamin :</label>
+        <input type="radio" name="gender" id="laki" value="laki-laki">
+        <label for="laki">Laki-Laki</label>
+        <input type="radio" name="gender" id="perempuan" value="perempuan">
+        <label for="perempuan">Perempuan</label>        
+        <label for="NoPhone">Phone</label>
+        <input type="text" name="NoPhone" id="NoPhone">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
